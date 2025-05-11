@@ -28,12 +28,114 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            textBoxTitre = new TextBox();
+            textBoxDescription = new TextBox();
+            comboBoxPriorite = new ComboBox();
+            Ajouter = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            dataGridViewTaches = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTaches).BeginInit();
+            SuspendLayout();
+            // 
+            // textBoxTitre
+            // 
+            textBoxTitre.Location = new Point(4, 62);
+            textBoxTitre.Name = "textBoxTitre";
+            textBoxTitre.Size = new Size(438, 31);
+            textBoxTitre.TabIndex = 0;
+            // 
+            // textBoxDescription
+            // 
+            textBoxDescription.Location = new Point(4, 144);
+            textBoxDescription.Name = "textBoxDescription";
+            textBoxDescription.Size = new Size(438, 31);
+            textBoxDescription.TabIndex = 1;
+            // 
+            // comboBoxPriorite
+            // 
+            comboBoxPriorite.FormattingEnabled = true;
+            comboBoxPriorite.Location = new Point(4, 227);
+            comboBoxPriorite.Name = "comboBoxPriorite";
+            comboBoxPriorite.Size = new Size(438, 33);
+            comboBoxPriorite.TabIndex = 5;
+            // 
+            // Ajouter
+            // 
+            Ajouter.Location = new Point(148, 318);
+            Ajouter.Name = "Ajouter";
+            Ajouter.Size = new Size(112, 34);
+            Ajouter.TabIndex = 6;
+            Ajouter.Text = "ajouter";
+            Ajouter.UseVisualStyleBackColor = true;
+            Ajouter.Click += Ajouter_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(8, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 25);
+            label1.TabIndex = 7;
+            label1.Text = "titre";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(11, 114);
+            label2.Name = "label2";
+            label2.Size = new Size(100, 25);
+            label2.TabIndex = 8;
+            label2.Text = "description";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 186);
+            label3.Name = "label3";
+            label3.Size = new Size(69, 25);
+            label3.TabIndex = 9;
+            label3.Text = "priorite";
+            // 
+            // dataGridViewTaches
+            // 
+            dataGridViewTaches.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewTaches.Location = new Point(448, 0);
+            dataGridViewTaches.Name = "dataGridViewTaches";
+            dataGridViewTaches.RowHeadersWidth = 62;
+            dataGridViewTaches.Size = new Size(744, 642);
+            dataGridViewTaches.TabIndex = 10;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1194, 715);
+            Controls.Add(dataGridViewTaches);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(Ajouter);
+            Controls.Add(comboBoxPriorite);
+            Controls.Add(textBoxDescription);
+            Controls.Add(textBoxTitre);
+            Name = "Form1";
+            Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)dataGridViewTaches).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private TextBox textBoxTitre;
+        private TextBox textBoxDescription;
+        private ComboBox comboBoxPriorite;
+        private Button Ajouter;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private DataGridView dataGridViewTaches;
     }
 }

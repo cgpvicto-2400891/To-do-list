@@ -1,26 +1,50 @@
 {
   "version": 3,
   "targets": {
-    "net8.0-windows7.0": {}
+    "net8.0-windows7.0": {
+      "Bibliotheque/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Bibliotheque.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bibliotheque.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Bibliotheque/1.0.0": {
+      "type": "project",
+      "path": "../Bibliotheque/Bibliotheque.csproj",
+      "msbuildProject": "../Bibliotheque/Bibliotheque.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0-windows7.0": []
+    "net8.0-windows7.0": [
+      "Bibliotheque >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\bensc\\.nuget\\packages\\": {}
+    "C:\\Users\\aliel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjetsSession2\\Programmation2\\BenVsAli\\ToDoList\\ToDoList\\ToDoList.csproj",
+      "projectUniqueName": "C:\\Users\\aliel\\OneDrive\\Desktop\\Todoliste\\BenVsAli\\ToDoList\\ToDoList\\ToDoList.csproj",
       "projectName": "ToDoList",
-      "projectPath": "C:\\ProjetsSession2\\Programmation2\\BenVsAli\\ToDoList\\ToDoList\\ToDoList.csproj",
-      "packagesPath": "C:\\Users\\bensc\\.nuget\\packages\\",
-      "outputPath": "C:\\ProjetsSession2\\Programmation2\\BenVsAli\\ToDoList\\ToDoList\\obj\\",
+      "projectPath": "C:\\Users\\aliel\\OneDrive\\Desktop\\Todoliste\\BenVsAli\\ToDoList\\ToDoList\\ToDoList.csproj",
+      "packagesPath": "C:\\Users\\aliel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aliel\\OneDrive\\Desktop\\Todoliste\\BenVsAli\\ToDoList\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\bensc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aliel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +57,11 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\aliel\\OneDrive\\Desktop\\Todoliste\\BenVsAli\\ToDoList\\Bibliotheque\\Bibliotheque.csproj": {
+              "projectPath": "C:\\Users\\aliel\\OneDrive\\Desktop\\Todoliste\\BenVsAli\\ToDoList\\Bibliotheque\\Bibliotheque.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -70,7 +98,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
