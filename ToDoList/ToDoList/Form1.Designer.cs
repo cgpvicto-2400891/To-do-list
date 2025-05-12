@@ -41,29 +41,29 @@
             // 
             // textBoxTitre
             // 
-            textBoxTitre.Location = new Point(4, 62);
+            textBoxTitre.Location = new Point(117, 21);
             textBoxTitre.Name = "textBoxTitre";
-            textBoxTitre.Size = new Size(438, 31);
+            textBoxTitre.Size = new Size(1065, 31);
             textBoxTitre.TabIndex = 0;
             // 
             // textBoxDescription
             // 
-            textBoxDescription.Location = new Point(4, 144);
+            textBoxDescription.Location = new Point(117, 89);
             textBoxDescription.Name = "textBoxDescription";
-            textBoxDescription.Size = new Size(438, 31);
+            textBoxDescription.Size = new Size(1065, 31);
             textBoxDescription.TabIndex = 1;
             // 
             // comboBoxPriorite
             // 
             comboBoxPriorite.FormattingEnabled = true;
-            comboBoxPriorite.Location = new Point(4, 227);
+            comboBoxPriorite.Location = new Point(117, 158);
             comboBoxPriorite.Name = "comboBoxPriorite";
-            comboBoxPriorite.Size = new Size(438, 33);
+            comboBoxPriorite.Size = new Size(1065, 33);
             comboBoxPriorite.TabIndex = 5;
             // 
             // Ajouter
             // 
-            Ajouter.Location = new Point(148, 318);
+            Ajouter.Location = new Point(501, 197);
             Ajouter.Name = "Ajouter";
             Ajouter.Size = new Size(112, 34);
             Ajouter.TabIndex = 6;
@@ -83,7 +83,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(11, 114);
+            label2.Location = new Point(3, 95);
             label2.Name = "label2";
             label2.Size = new Size(100, 25);
             label2.TabIndex = 8;
@@ -92,7 +92,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 186);
+            label3.Location = new Point(12, 166);
             label3.Name = "label3";
             label3.Size = new Size(69, 25);
             label3.TabIndex = 9;
@@ -101,10 +101,10 @@
             // dataGridViewTaches
             // 
             dataGridViewTaches.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewTaches.Location = new Point(448, 0);
+            dataGridViewTaches.Location = new Point(3, 237);
             dataGridViewTaches.Name = "dataGridViewTaches";
             dataGridViewTaches.RowHeadersWidth = 62;
-            dataGridViewTaches.Size = new Size(744, 642);
+            dataGridViewTaches.Size = new Size(1189, 466);
             dataGridViewTaches.TabIndex = 10;
             // 
             // Form1

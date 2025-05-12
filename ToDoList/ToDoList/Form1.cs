@@ -50,7 +50,7 @@ namespace ToDoList
                 Name = "colDescription",
                 DataPropertyName = "Description",
                 HeaderText = "Description",
-                Width = 200
+                Width = 400
             });
 
             dataGridViewTaches.Columns.Add(new DataGridViewTextBoxColumn
@@ -58,7 +58,14 @@ namespace ToDoList
                 Name = "colPriorite",
                 DataPropertyName = "Priorites",
                 HeaderText = "Priorité",
-                Width = 80
+                Width = 100
+            });
+            dataGridViewTaches.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "colCreatedAt",
+                DataPropertyName = "CreatedAt",
+                HeaderText = "created at",
+                Width = 123
             });
 
             // CheckBox pour le statut
@@ -67,7 +74,7 @@ namespace ToDoList
                 Name = "colStatus",
                 DataPropertyName = "Status",
                 HeaderText = "Terminé",
-                Width = 60
+                Width = 120
             };
             dataGridViewTaches.Columns.Add(colStatus);
 
@@ -77,7 +84,7 @@ namespace ToDoList
                 Name = "colModifier",
                 Text = "Modifier",
                 UseColumnTextForButtonValue = true,
-                Width = 80
+                Width = 120
             };
             dataGridViewTaches.Columns.Add(colModifier);
 
@@ -86,7 +93,7 @@ namespace ToDoList
                 Name = "colSupprimer",
                 Text = "Supprimer",
                 UseColumnTextForButtonValue = true,
-                Width = 80
+                Width = 120
             };
             dataGridViewTaches.Columns.Add(colSupprimer);
 
